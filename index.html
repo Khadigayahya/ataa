@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>عطاء | أدوات هندسية بإيد الطلاب لبعض</title>
+<meta name="description" content="عطاء مبادرة طلابية بتوصّل أدوات الرسم الهندسي والمستلزمات الدراسية من الطلاب والخريجين المستغنيين عنها لطلاب السنة الإعدادية بكليات الهندسة اللي محتاجينها.">
+<meta name="theme-color" content="#F8F1BD" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0D2429" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_EG">
+<meta property="og:site_name" content="عطاء">
+<meta property="og:title" content="عطاء | أدوات هندسية بإيد الطلاب لبعض">
+<meta property="og:description" content="أداة مش بتستخدمها دلوقتي، ممكن تكون بداية مشوار لطالب تاني. اتبرع بأدواتك أو سجّل طلبك.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;900&family=Almarai:wght@400;700;800&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700;900&family=Almarai:wght@400;700;800&display=swap"></noscript>
+<link rel="stylesheet" href="css/style.css">
+
+<script>
+  // يطبّق الوضع (ليلي/نهاري) قبل ظهور الصفحة علشان مايحصلش وميض
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem('ataa-theme'); } catch (e) {}
+    var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+  })();
+</script>
+<script src="js/config.js"></script>
+<script src="js/main.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">انتقل للمحتوى</a>
+
+<header class="site-nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="عطاء — الصفحة الرئيسية">
+      <img class="brand-mark" src="assets/logo.png" width="220" height="137" alt="شعار عطاء">
+      <span>عطاء</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#help">إزاي تساعد</a></li>
+      <li><a href="#about">عن المبادرة</a></li>
+      <li><a href="#stories">قالوا عن عطاء</a></li>
+      <li><a href="#contact">تواصل معنا</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع الليلي والنهاري" type="button">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 12H1.8M22.2 12h-2.4M5.6 5.6l1.7 1.7M16.7 16.7l1.7 1.7M18.4 5.6l-1.7 1.7M7.3 16.7l-1.7 1.7"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.3A8.4 8.4 0 1 1 9.7 4a6.6 6.6 0 0 0 10.3 10.3Z"/></svg>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="القائمة" aria-expanded="false" aria-controls="navLinks" type="button">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="wrap hero-inner">
+    <div>
+      <div class="eyebrow-line hero-reveal"><span class="rule"></span>مبادرة طلابية لدعم طلاب هندسة إعدادي</div>
+      <h1 class="hero-reveal d2">أداة مش بتستخدمها دلوقتي، ممكن تكون بداية مشوار لطالب تاني</h1>
+      <p class="lede hero-reveal d3">
+        عطاء بتربط بين طلاب وخريجين عندهم أدوات رسم هندسي أو مستلزمات دراسية مستغنيين عنها، وبين طلاب السنة الإعدادية بكليات الهندسة اللي محتاجين نفس الأدوات دي ومش قادرين يوفروها بسهولة.
+      </p>
+      <div class="hero-cta-row hero-reveal d3">
+        <a href="#help" class="btn btn-primary">إزاي تقدر تساعد</a>
+        <a href="#about" class="btn btn-ghost">تعرف على المبادرة</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="assets/hero-art.png" width="480" height="463" alt="شعار عطاء" fetchpriority="high">
+    </div>
+  </div>
+</section>
+
+<div class="quote-strip">
+  <div class="wrap">
+    <p>إنما السعادة في عطاءٍ، فكلما قدمت الخير كلما زاد نور قلبك</p>
+    <div class="quote-hearts" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.5-9.6-9.1C1.2 8.6 3 5.5 6.2 5.2 8 5 9.7 5.9 12 8.3c2.3-2.4 4-3.3 5.8-3.1 3.2.3 5 3.4 3.8 6.7C19.5 16.5 12 21 12 21Z"/></svg>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.5-9.6-9.1C1.2 8.6 3 5.5 6.2 5.2 8 5 9.7 5.9 12 8.3c2.3-2.4 4-3.3 5.8-3.1 3.2.3 5 3.4 3.8 6.7C19.5 16.5 12 21 12 21Z"/></svg>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.5-9.6-9.1C1.2 8.6 3 5.5 6.2 5.2 8 5 9.7 5.9 12 8.3c2.3-2.4 4-3.3 5.8-3.1 3.2.3 5 3.4 3.8 6.7C19.5 16.5 12 21 12 21Z"/></svg>
+    </div>
+  </div>
+</div>
+
+<section class="section" id="help">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>إزاي تقدر تساعد؟</h2>
+      <p>قدامك طريقتين، اختار اللي تناسب موقفك دلوقتي.</p>
+    </div>
+
+    <div class="help-grid">
+      <!-- NEED TOOLS -->
+      <div class="path-card path-need">
+        <div class="path-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V6a2 2 0 0 1 2-2h9l5 5v10.5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z"/><path d="M14 4v4a1 1 0 0 0 1 1h4"/><path d="M9 14h6M9 17h6"/></svg>
+        </div>
+        <h3>محتاج أدوات؟</h3>
+        <p>
+          لو انت طالب في السنة الإعدادية بكلية هندسة ومحتاج أدوات رسم هندسي أو مستلزمات دراسية ومش قادر توفرها دلوقتي، سجّل طلبك وهنحاول نوصّلك بالمتاح على قد إمكانياتنا.
+        </p>
+        <button type="button" class="btn btn-primary" data-open-dialog="requestDialog">سجّل طلبك</button>
+      </div>
+
+      <!-- WANT TO GIVE -->
+      <div class="path-card path-give">
+        <div class="path-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7.5-4.5-9.6-9.1C1.2 8.6 3 5.5 6.2 5.2 8 5 9.7 5.9 12 8.3c2.3-2.4 4-3.3 5.8-3.1 3.2.3 5 3.4 3.8 6.7C19.5 16.5 12 21 12 21Z"/></svg>
+        </div>
+        <h3>عايز تساهم؟</h3>
+        <p>
+          لو معاك أدوات مستغني عنها أو عايز تدعم المبادرة بشكل مادي، اختار الطريقة اللي تناسبك.
+        </p>
+        <button class="give-toggle" id="giveToggle" aria-expanded="false" aria-controls="givePanel" type="button">
+          <span class="btn btn-on-give">اعرض طرق المساهمة</span>
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+
+        <div class="give-panel" id="givePanel" data-open="false">
+          <div>
+            <div class="give-options">
+              <div class="give-option">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M2 10h20"/></svg>
+                <div class="go-text">
+                  <strong>مساهمة مادية</strong>
+                  <p>تبرع بمبلغ بسيط بيساعدنا نشتري أدوات جديدة للطلاب اللي طلباتهم متأخرة.</p>
+                  <button type="button" class="btn btn-ghost" data-open-dialog="moneyDialog" tabindex="-1">ساهم دلوقتي</button>
+                </div>
+              </div>
+              <div class="give-option">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 3.5 20.5 9.5 9.5 20.5 3.5 14.5Z"/><path d="M13 5 19 11"/></svg>
+                <div class="go-text">
+                  <strong>مساهمة بأدوات</strong>
+                  <p>عندك أدوات رسم هندسي أو حاسبة أو كتب مستعملة بحالة كويسة؟ ابعتلنا تفاصيلها.</p>
+                  <button type="button" class="btn btn-ghost" data-open-dialog="toolsDialog" tabindex="-1">أبلغ عن أدوات</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about" style="background:var(--bg-alt);">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>مبادرة قايمة على إن الطلاب يساعدوا بعض</h2>
+      <p>مفيش جهة كبيرة وراها، مجموعة طلاب وخريجين شايفين إن الأداة البسيطة ممكن تفرق كتير في أول سنة هندسة.</p>
+    </div>
+
+    <div class="values-row">
+      <div class="value-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 20a4 4 0 0 0-10 0"/><circle cx="12" cy="9" r="4"/><path d="M21 20a4 4 0 0 0-3.4-4M6.4 16A4 4 0 0 0 3 20"/></svg>
+        <h3>من طالب لطالب</h3>
+        <p>كل أداة بتوصل من حد جرّب نفس الصعوبة قبل كده، مش من جهة بعيدة عن المشكلة.</p>
+      </div>
+      <div class="value-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12S6 5 12 5s9.5 7 9.5 7-3.5 7-9.5 7-9.5-7-9.5-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+        <h3>شفافية في كل خطوة</h3>
+        <p>بنتابع كل طلب لحد ما الأداة توصل لصاحبها، وبنكون واضحين مع اللي بيتبرعوا بمصير مساهمتهم.</p>
+      </div>
+      <div class="value-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/><path d="M21 3v5h-5M3 21v-5h5"/></svg>
+        <h3>مستمرين كل سنة</h3>
+        <p>هدفنا إننا نغطي كل دفعة جديدة بتدخل الكلية، مش موسم واحد وبس.</p>
+      </div>
+    </div>
+
+    <!-- عدّلي الأرقام دي بالأرقام الحقيقية للمبادرة -->
+    <div class="stats-strip">
+      <div class="stat"><b>+120</b><span>أداة وصلت لطلاب محتاجين</span></div>
+      <div class="stat"><b>+60</b><span>متبرع بأدوات ودعم مادي</span></div>
+      <div class="stat"><b>3</b><span>كليات هندسة متعاملين معاها</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= آراء الناس ================= -->
+<section class="section" id="stories">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>قالوا عن عطاء</h2>
+      <p>رسايل حقيقية وصلتنا من طلاب اتعاملوا مع عطاء، زي ما اتبعتت بالظبط. دوس على أي رسالة علشان تشوفها بحجم كامل.</p>
+    </div>
+
+    <p class="stories-hint" aria-hidden="true">اسحب علشان تشوف باقي الرسايل ←</p>
+    <!-- لإضافة رسالة جديدة: حطي الصورة في assets/stories وانسخي أي <figure class="story-card"> وغيّري رقم الصورة -->
+    <div class="stories" id="storiesList">
+      <figure class="story-card">
+        <button type="button" class="story-open" data-index="0" aria-label="عرض الرسالة 1 بحجم كامل">
+          <img src="assets/stories/story-1.jpg" width="720" height="675" loading="lazy" decoding="async" alt="رسالة شكر لعطاء: جزاكم الله عني خيراً كتيراً على الأدوات. الحمد لله أحرزت تقدير جيد ودخلت قسم التخطيط العمراني. بارك الله في جهودكم وكتبها في ميزان حسناتكم، واستعملكم دائماً في قضاء حوائج الآخرين ولا استبدلكم أبداً.">
+        </button>
+      </figure>
+      <figure class="story-card">
+        <button type="button" class="story-open" data-index="1" aria-label="عرض الرسالة 2 بحجم كامل">
+          <img src="assets/stories/story-2.jpg" width="700" height="1100" loading="lazy" decoding="async" alt="رسالة شكر لعطاء: أولًا أنا من أشد الناس امتنانًا لأمثال المهندس يوسف، والله يعلم إني أكتب هذا الكلام من قلبي. تعلمت منه جملة أحفظها دائمًا ولازالت تؤثر فيا، كانت دايمًا بتتردد في ذهني: «لنمهد دربًا». احفظوها جيدًا. كنت في قمة السرور والسعادة عندما منحني شيء كنت في أشد الاحتياج إليه، ليس فقط الشيء المادي وإنما معنوي أثّر في انضباط شخصيتي، عندما نصحني في وقت قل فيه النصح. كنت كلما أستعمل تلك الأدوات أشعر بسعادة، لا لاستعمالها فقط، بل لأن هناك شخص منحني تلك الأشياء بدون مقابل مادي أو مصلحة. أنا بقول الكلام دا حرفيًا من قلبي من غير مبالغة، أنا واقف في المواصلات وبكتب الكلام دا. بجد ربنا يجازيه خير الجزاء، ليس فقط عن مراعاة التعب المادي، وإنما أثّر بشكل غير طبيعي في شخصيتي.">
+        </button>
+      </figure>
+      <figure class="story-card">
+        <button type="button" class="story-open" data-index="2" aria-label="عرض الرسالة 3 بحجم كامل">
+          <img src="assets/stories/story-3.jpg" width="720" height="869" loading="lazy" decoding="async" alt="رسالة شكر لعطاء: أنا كنت محتاجه الأدوات دي جدًا وجتلي في وقت كنت مش عارفه أوفرها خالص. ساعدتني كتير في مذاكرتي وتنفيذ اللوح بتاعتي طول سنة إعدادي، والحمد لله عدت السنة ونجحت. ربنا يجازيكم كل خير، وأتمنى في يوم أقدر أساعد حد زي ما انتوا ساعدتوني. شكراً جداً وجزاكم الله كل خير.">
+        </button>
+      </figure>
+      <figure class="story-card">
+        <button type="button" class="story-open" data-index="3" aria-label="عرض الرسالة 4 بحجم كامل">
+          <img src="assets/stories/story-4.jpg" width="720" height="876" loading="lazy" decoding="async" alt="رسالة شكر لعطاء: بشمهندس يوسف، جزاك الله خيراً وبارك فيك على المساعدة. أنا سجلت في الفورم في البداية وكنت مش مصدق إن دا ممكن يحصل، وكنت فاكر إنها تجارة وهتبيع. لكن حضرتك وعدت وأوفيت، ولسه فاكر لما كنت مستنيني عند نظم 😁 فجزاك الله خير الجزاء 🤍🤍">
+        </button>
+      </figure>
+      <figure class="story-card">
+        <button type="button" class="story-open" data-index="4" aria-label="عرض الرسالة 5 بحجم كامل">
+          <img src="assets/stories/story-5.jpg" width="720" height="1035" loading="lazy" decoding="async" alt="رسالة شكر لعطاء: شعوري إن في حد بيوفر الكلام ده: صراحة الموضوع كان غريب إن حد يتواصل معايا ويسألني عن أي حاجة ناقصاني. حسيت فعلًا إن في ناس موجودة بتساعد وبتحاول تخفف عن الشباب الجداد الضغط وصعوبة الظروف. عن الأدوات وإزاي فرقت معايا: الأدوات اللي كنت محتاجها فرقت معايا والحمد لله، كملت معايا طول السنة وسهلت عليا التعامل في المواد. فجزاكم الله خيرًا.">
+        </button>
+      </figure>
+      <figure class="story-card">
+        <button type="button" class="story-open" data-index="5" aria-label="عرض الرسالة 6 بحجم كامل">
+          <img src="assets/stories/story-6.jpg" width="720" height="680" loading="lazy" decoding="async" alt="رسالة شكر لعطاء: ماشاء الله، لو كنت أعرف كدا مكنتش اشتريت 😂 مش مصدقة إن في ناس متعاونة بالطريقة دي، اللهم بارك. ماشاء الله حاجة عظمة، وأعانكم الله على هذا المجهود، وتقبل الله عملكم وجعله خالصًا لوجهه الكريم.">
+        </button>
+      </figure>
+      <figure class="story-card">
+        <button type="button" class="story-open" data-index="6" aria-label="عرض الرسالة 7 بحجم كامل">
+          <img src="assets/stories/story-7.jpg" width="619" height="1100" loading="lazy" decoding="async" alt="رسالة شكر لعطاء: السلام عليكم ورحمة الله وبركاته. أنا من الناس اللي كانت ناقصها أدوات السنة اللي فاتت ومعرفتش أشتري الأدوات الباقية وقتها. لما سألت ناس، أول حد قالولي عليه هو بشمهندس يوسف. كنت محروجة في الأول، لكن طلبت الحاجة وفعلًا بجد متأخرش خالص، واستفدت أوي من الأدوات. أنا كنت واخدة أرسطو وجبت جيد جدًا وصفية، الحمد لله كله بكرم ربنا. لكن الأرسطو اللي أخدته فرق معايا جامد، لأني كنت باخد بتاع أصحابي، وأوقات مكنتش بعرف أذاكر المادة دي لأنهم كانوا بيذاكروها وقتها ومينفعش آخد منهم الأدوات. اللي معاه أدوات، حقيقي يا جماعة متركنوهاش، اتبرعوا بيها للناس تستفاد بيها. حقيقي بتفرق. كله في ميزان حسناتكم، وجزاكم الله خيرًا.">
+        </button>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= المساهمين ================= -->
+<section class="section" id="contributors" style="background:var(--bg-alt);">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>شركاء العطاء</h2>
+      <p>كل أداة وصلت لطالب كان وراها حد قرر يدّي. شكرًا لكل اللي ساهموا بأدواتهم أو وقتهم أو دعمهم.</p>
+    </div>
+    <!-- الأسماء بتتكتب في js/config.js في خانة contributors -->
+    <ul class="contributors" id="contributorsList"></ul>
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <h3>عندك سؤال أو استفسار؟</h3>
+        <p>تواصل معانا على أي وسيلة من دول، وهنرد عليك في أسرع وقت.</p>
+      </div>
+      <div class="footer-contact">
+        <a data-contact="email" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg>
+          <span class="ltr" data-contact-text></span>
+        </a>
+        <a data-contact="phone" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 4.2 2 2 0 0 1 5 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .6 2.9a2 2 0 0 1-.4 2.1L9 10a16 16 0 0 0 5 5l1.3-1.2a2 2 0 0 1 2.1-.4c.9.3 1.9.5 2.9.6a2 2 0 0 1 1.7 2Z"/></svg>
+          <span class="ltr" data-contact-text></span>
+        </a>
+        <a data-contact="whatsapp" target="_blank" rel="noopener" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 20.5 5 16a8.5 8.5 0 1 1 3.2 3.1Z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1.2-1.4-2-1-.8.8a4 4 0 0 1-2.3-2.3l.8-.8-1-2L9 9.5Z"/></svg>
+          <span>راسلنا على واتساب</span>
+        </a>
+        <div class="social-row" style="margin-top:8px;">
+          <a data-contact="facebook" target="_blank" rel="noopener" aria-label="فيسبوك" hidden><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.7h2.6l.4-3h-3v-1.9c0-.9.2-1.5 1.5-1.5h1.6V4.2c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9V10.3H8v3h2.5V21h3Z"/></svg></a>
+          <a data-contact="instagram" target="_blank" rel="noopener" aria-label="إنستجرام" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.6"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> عطاء — مبادرة طلابية</span>
+      <span>صُنعت بإيدين طلاب هندسة بيحبوا يرجعوا الجميل</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= نافذة: طلب أدوات ================= -->
+<dialog class="sheet" id="requestDialog" aria-labelledby="requestTitle">
+  <div class="sheet-head">
+    <div>
+      <h2 id="requestTitle">سجّل طلبك</h2>
+      <p>املا البيانات دي وهنتواصل معاك أول ما نلاقي الأدوات اللي محتاجها.</p>
+    </div>
+    <button type="button" class="sheet-close" data-close-dialog aria-label="إغلاق">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+  <div class="sheet-body">
+    <form class="ataa-form" data-form-type="طلب أدوات" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="rq-name">الاسم <span class="req">*</span></label>
+          <input id="rq-name" name="الاسم" type="text" autocomplete="name" required maxlength="80">
+          <span class="error"></span>
+        </div>
+        <div class="field">
+          <label for="rq-phone">رقم الموبايل (واتساب) <span class="req">*</span></label>
+          <input id="rq-phone" name="الموبايل" type="tel" inputmode="tel" autocomplete="tel" required placeholder="01xxxxxxxxx" data-validate="phone">
+          <span class="error"></span>
+        </div>
+        <div class="field">
+          <label for="rq-college">الجامعة / الكلية <span class="req">*</span></label>
+          <input id="rq-college" name="الكلية" type="text" required maxlength="120" placeholder="مثال: هندسة القاهرة">
+          <span class="error"></span>
+        </div>
+        <div class="field">
+          <label for="rq-city">المحافظة / المدينة <span class="req">*</span></label>
+          <input id="rq-city" name="المحافظة" type="text" required maxlength="80">
+          <span class="error"></span>
+        </div>
+        <fieldset class="field full" data-group-required>
+          <legend>الأدوات اللي محتاجها <span class="req">*</span></legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="الأدوات" value="لوحة رسم (بورد)"><span>لوحة رسم (بورد)</span></label>
+            <label class="chip"><input type="checkbox" name="الأدوات" value="مسطرة T"><span>مسطرة T</span></label>
+            <label class="chip"><input type="checkbox" name="الأدوات" value="طقم مثلثات"><span>طقم مثلثات</span></label>
+            <label class="chip"><input type="checkbox" name="الأدوات" value="برجل"><span>برجل</span></label>
+            <label class="chip"><input type="checkbox" name="الأدوات" value="منقلة"><span>منقلة</span></label>
+            <label class="chip"><input type="checkbox" name="الأدوات" value="أقلام رسم هندسي"><span>أقلام رسم هندسي</span></label>
+            <label class="chip"><input type="checkbox" name="الأدوات" value="آلة حاسبة علمية"><span>آلة حاسبة علمية</span></label>
+            <label class="chip"><input type="checkbox" name="الأدوات" value="كتب ومذكرات"><span>كتب ومذكرات</span></label>
+            <label class="chip"><input type="checkbox" name="الأدوات" value="حاجة تانية"><span>حاجة تانية</span></label>
+          </div>
+          <span class="error"></span>
+        </fieldset>
+        <div class="field full">
+          <label for="rq-notes">تفاصيل إضافية</label>
+          <textarea id="rq-notes" name="ملاحظات" maxlength="800" placeholder="اكتب أي تفاصيل تساعدنا، زي نوع الحاسبة أو مقاس اللوحة"></textarea>
+        </div>
+      </div>
+      <div class="hp-field" aria-hidden="true"><label>اترك الخانة دي فاضية<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">ابعت الطلب</button>
+        <button type="button" class="btn btn-ghost" data-close-dialog>إلغاء</button>
+      </div>
+      <p class="form-note">بياناتك بتوصل لفريق عطاء بس، وبنستخدمها علشان نتواصل معاك بخصوص طلبك.</p>
+    </form>
+  </div>
+</dialog>
+
+<!-- ================= نافذة: التبرع بأدوات ================= -->
+<dialog class="sheet" id="toolsDialog" aria-labelledby="toolsTitle">
+  <div class="sheet-head">
+    <div>
+      <h2 id="toolsTitle">أبلغ عن أدوات</h2>
+      <p>قولنا عندك إيه وهنتفق معاك على طريقة الاستلام.</p>
+    </div>
+    <button type="button" class="sheet-close" data-close-dialog aria-label="إغلاق">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+  <div class="sheet-body">
+    <form class="ataa-form" data-form-type="تبرع بأدوات" novalidate>
+      <div class="form-grid">
+        <div class="field">
+          <label for="tl-name">الاسم <span class="req">*</span></label>
+          <input id="tl-name" name="الاسم" type="text" autocomplete="name" required maxlength="80">
+          <span class="error"></span>
+        </div>
+        <div class="field">
+          <label for="tl-phone">رقم الموبايل (واتساب) <span class="req">*</span></label>
+          <input id="tl-phone" name="الموبايل" type="tel" inputmode="tel" autocomplete="tel" required placeholder="01xxxxxxxxx" data-validate="phone">
+          <span class="error"></span>
+        </div>
+        <div class="field full">
+          <label for="tl-city">المحافظة / المدينة <span class="req">*</span></label>
+          <input id="tl-city" name="المحافظة" type="text" required maxlength="80">
+          <span class="error"></span>
+        </div>
+        <fieldset class="field full" data-group-required>
+          <legend>الأدوات اللي عندك <span class="req">*</span></legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="الأدوات" value="لوحة رسم (بورد)"><span>لوحة رسم (بورد)</span></label>
+            <label class="chip"><input type="checkbox" name="الأدوات" value="مسطرة T"><span>مسطرة T</span></label>
+            <label class="chip"><input type="checkbox" name="الأدوات" value="طقم مثلثات"><span>طقم مثلثات</span></label>
+            <label class="chip"><input type="checkbox" name="الأدوات" value="برجل"><span>برجل</span></label>
+            <label class="chip"><input type="checkbox" name="الأدوات" value="منقلة"><span>منقلة</span></label>
+            <label class="chip"><input type="checkbox" name="الأدوات" value="أقلام رسم هندسي"><span>أقلام رسم هندسي</span></label>
+            <label class="chip"><input type="checkbox" name="الأدوات" value="آلة حاسبة علمية"><span>آلة حاسبة علمية</span></label>
+            <label class="chip"><input type="checkbox" name="الأدوات" value="كتب ومذكرات"><span>كتب ومذكرات</span></label>
+            <label class="chip"><input type="checkbox" name="الأدوات" value="حاجة تانية"><span>حاجة تانية</span></label>
+          </div>
+          <span class="error"></span>
+        </fieldset>
+        <div class="field">
+          <label for="tl-condition">حالة الأدوات <span class="req">*</span></label>
+          <select id="tl-condition" name="الحالة" required>
+            <option value="">اختار...</option>
+            <option>زي الجديدة</option>
+            <option>مستعملة بحالة كويسة</option>
+            <option>محتاجة تصليح بسيط</option>
+          </select>
+          <span class="error"></span>
+        </div>
+        <div class="field">
+          <label for="tl-delivery">طريقة التسليم <span class="req">*</span></label>
+          <select id="tl-delivery" name="التسليم" required>
+            <option value="">اختار...</option>
+            <option>هسلّمها بنفسي</option>
+            <option>محتاج حد يستلمها مني</option>
+            <option>نتفق بعدين</option>
+          </select>
+          <span class="error"></span>
+        </div>
+        <div class="field full">
+          <label for="tl-notes">تفاصيل إضافية</label>
+          <textarea id="tl-notes" name="ملاحظات" maxlength="800" placeholder="مثلاً: عدد القطع، نوع الحاسبة، مواعيد تناسبك للتسليم"></textarea>
+        </div>
+      </div>
+      <div class="hp-field" aria-hidden="true"><label>اترك الخانة دي فاضية<input type="text" name="_hp" tabindex="-1" autocomplete="off"></label></div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">ابعت التفاصيل</button>
+        <button type="button" class="btn btn-ghost" data-close-dialog>إلغاء</button>
+      </div>
+      <p class="form-note">شكرًا إنك فكرت في غيرك. هنتواصل معاك على الرقم اللي كتبته.</p>
+    </form>
+  </div>
+</dialog>
+
+<!-- ================= نافذة: المساهمة المادية ================= -->
+<dialog class="sheet" id="moneyDialog" aria-labelledby="moneyTitle">
+  <div class="sheet-head">
+    <div>
+      <h2 id="moneyTitle">مساهمة مادية</h2>
+      <p>أي مبلغ مهما كان بسيط بيفرق. كل جنيه بيروح لأدوات للطلاب.</p>
+    </div>
+    <button type="button" class="sheet-close" data-close-dialog aria-label="إغلاق">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+    </button>
+  </div>
+  <div class="sheet-body">
+    <div class="pay-list" id="payList"></div>
+    <p class="form-note" id="payNote">بعد التحويل ابعتلنا صورة الإيصال علشان نأكد وصول مساهمتك ونقولك وصلت لمين.</p>
+    <div class="form-actions" id="payActions"></div>
+  </div>
+</dialog>
+
+<!-- ================= عارض صور الآراء ================= -->
+<dialog class="viewer" id="storyViewer" aria-label="رسايل الطلاب">
+  <button type="button" class="viewer-btn viewer-close" data-close-dialog aria-label="إغلاق">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+  </button>
+  <button type="button" class="viewer-btn viewer-prev" id="viewerPrev" aria-label="الرسالة السابقة">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></svg>
+  </button>
+  <figure class="viewer-stage">
+    <img id="viewerImg" alt="">
+    <figcaption id="viewerCount"></figcaption>
+  </figure>
+  <button type="button" class="viewer-btn viewer-next" id="viewerNext" aria-label="الرسالة التالية">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></svg>
+  </button>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+</body>
+</html>
